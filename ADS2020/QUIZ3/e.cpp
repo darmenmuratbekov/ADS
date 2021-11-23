@@ -1,4 +1,5 @@
-#include <iostream> 
+
+ #include <iostream> 
 #include <vector>
 #include <algorithm> 
 #include <string>
@@ -38,7 +39,7 @@ vector<string> fxx(string a, string s, int len) {
     vector<string>dk;
     string mize = a.substr(0, s.size());
     string xize = a.substr(a.size()   - s.size(), s.size());
-    if(mize == s && mize.size() != a.size()) {
+    if(mize == s && xize == s && mize.size() != a.size()) {
         conter.push_back(mize);
         dk.push_back(mize);
 
@@ -108,11 +109,12 @@ int main() {
    }
    else {
 
-     for(int i =0;  i < conter.size(); i++) {
+   for(int i =0;  i < conter.size(); i++) {
 
-          cout << conter[i]  << " ";
+       cout << conter[i]  << " ";
 
    }
+
 
 }
 
